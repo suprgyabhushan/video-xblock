@@ -6,7 +6,7 @@ from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
 
 
-class VideoXBlock(StudioEditableXBlockMixin, XBlock):
+class VoiceXBlock(StudioEditableXBlockMixin, XBlock):
 
 
     # Fields are defined on the class.  You can access them in your code as
@@ -23,10 +23,10 @@ class VideoXBlock(StudioEditableXBlockMixin, XBlock):
         The primary view of the VideoXBlock, shown to students
         when viewing courses.
         """
-        html = self.resource_string("static/html/videoxblock.html")
+        html = self.resource_string("static/html/voicexblock.html")
         frag = Fragment(html.format(self=self))
-        frag.add_css(self.resource_string("static/css/videoxblock.css"))
-        # frag.add_javascript(self.resource_string("static/js/src/videoxblock1.js"))
+        frag.add_css(self.resource_string("static/css/voicexblock.css"))
+        frag.add_javascript(self.resource_string("static/js/src/voicexblock.js"))
 
         return frag
 

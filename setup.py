@@ -1,4 +1,4 @@
-"""Setup for videoxblock XBlock."""
+"""Setup for voicexblock XBlock."""
 
 import os
 from setuptools import setup
@@ -21,12 +21,12 @@ def package_data(pkg, roots):
 
 
 setup(
-    name='video-xblock',
+    name='voice-xblock',
     version='1.0',
     description='An xblock to simplify voice commands on Open edX pages',
     license='AGPL v3',
     packages=[
-        'videoxblock',
+        'voicexblock',
     ],
     install_requires=[
         'XBlock',
@@ -34,8 +34,8 @@ setup(
     ],
     entry_points={
         'xblock.v1': [
-            'videoxblock = videoxblock:VideoXBlock',
+            'voicexblock = voicexblock:VoiceXBlock',
         ]
     },
-    package_data=package_data("videoxblock", ["static", "public"]),
+    package_data=package_data("voicexblock", ["static", "public"]),
 )
