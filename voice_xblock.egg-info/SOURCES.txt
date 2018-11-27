@@ -10,5 +10,5 @@ voicexblock/__init__.py
 voicexblock/voicexblock.py
 voicexblock/static/README.txt
 voicexblock/static/css/voicexblock.css
-voicexblock/static/html/videoxblock.html
+voicexblock/static/html/voicexblock.html
 voicexblock/static/js/src/voicexblock.js
