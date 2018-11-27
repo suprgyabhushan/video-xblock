@@ -27,8 +27,8 @@ class VoiceXBlock(StudioEditableXBlockMixin, XBlock):
         frag = Fragment(html.format(self=self))
         frag.add_css(self.resource_string("static/css/voicexblock.css"))
         #frag.add_javascript(self.resource_string("static/js/src/voicexblock.js"))
-        #frag.add_javascript(self.resource_string("static/js/src/jquery.min.js"))
-        #frag.add_javascript(self.resource_string("static/js/src/artyom.min.js"))
+        frag.add_javascript(self.resource_string("static/js/src/jquery.min.js"))
+        frag.add_javascript(self.resource_string("static/js/src/artyom.min.js"))
         return frag
 
     # Make fields editable in studio
