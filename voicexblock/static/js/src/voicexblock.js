@@ -1,7 +1,7 @@
   // Now we add the most important point of the plugin, the commands
   // This library is very flexible and now we will see why :
   // Every command is a literal object
-  artyom.addCommands([
+  /*artyom.addCommands([
     {
       description:"Artyom can talk too, lets say something if we say hello",
       indexes:["hello","hey"],
@@ -55,7 +55,7 @@
     }else {
       span.innerHTML = text;
     }
-  });
+  });*/
 
   function startArtyom(){
     artyom.initialize({
