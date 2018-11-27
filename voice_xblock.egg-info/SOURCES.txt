@@ -1,0 +1,14 @@
+README.md
+setup.py
+voice_xblock.egg-info/PKG-INFO
+voice_xblock.egg-info/SOURCES.txt
+voice_xblock.egg-info/dependency_links.txt
+voice_xblock.egg-info/entry_points.txt
+voice_xblock.egg-info/requires.txt
+voice_xblock.egg-info/top_level.txt
+voicexblock/__init__.py
+voicexblock/voicexblock.py
+voicexblock/static/README.txt
+voicexblock/static/css/voicexblock.css
+voicexblock/static/html/videoxblock.html
+voicexblock/static/js/src/voicexblock.js
