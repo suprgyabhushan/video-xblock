@@ -1,5 +1,3 @@
-
-
 import pkg_resources
 
 from xblock.core import XBlock
@@ -13,7 +11,7 @@ class VideoXBlock(StudioEditableXBlockMixin, XBlock):
 
     # Fields are defined on the class.  You can access them in your code as
     # self.<fieldname>.
-    display_name = String(display_name="Display name", default='Print', scope=Scope.settings)
+    display_name = String(display_name="Display name", default='Video', scope=Scope.settings)
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
@@ -25,7 +23,7 @@ class VideoXBlock(StudioEditableXBlockMixin, XBlock):
         The primary view of the VideoXBlock, shown to students
         when viewing courses.
         """
-        html = self.resource_string("static/html/videoxblock1.html")
+        html = self.resource_string("static/html/videoxblock.html")
         frag = Fragment(html.format(self=self))
         frag.add_css(self.resource_string("static/css/videoxblock.css"))
         # frag.add_javascript(self.resource_string("static/js/src/videoxblock1.js"))

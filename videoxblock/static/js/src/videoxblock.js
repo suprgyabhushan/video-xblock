@@ -1,72 +1,88 @@
-/* Javascript for PrintXBlock. */
-function printDiv() {
-    window.print();
-}
-function changecolorDiv(){
-  document.body.style.color = "blue";
-}
-function resizetextDiv() {
-  if (document.body.style.fontSize == "") {
-    document.body.style.fontSize = "1.0em";
+  // Now we add the most important point of the plugin, the commands
+  // This library is very flexible and now we will see why :
+  // Every command is a literal object
+  artyom.addCommands([
+    {
+      description:"Artyom can talk too, lets say something if we say hello",
+      indexes:["hello","hey"],
+      action:function(i){
+          // i = the index of the array of indexes option
+
+          if(i == 0){
+            //You say : "hello"
+            document.getElementById('time').innerHTML = "Hello ! How are you? I don't want to talk today";
+          }
+      }
+    },
+    {
+      description:"Say goodbye",
+      indexes:["goodbye"],
+      action:function(){
+        alert("Now all is over.");
+      }
+    },
+    {
+      description:"Say what time is it",
+      indexes:['what time is it'],
+      action:function(){
+       var currentdate = new Date();
+       var datetime = "About the date : " + currentdate.getDate() + "/"
+            + (currentdate.getMonth()+1)  + "/"
+            + currentdate.getFullYear() + " @ "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes() + ":"
+            + currentdate.getSeconds();
+        document.getElementById('time').innerHTML = datetime;
+      }
+    },
+    {
+      description: "Smart command, say how much x in what we say",
+      indexes:["what's the number of *"],
+      smart:true,
+      action:function(i,wildcard){
+        document.getElementById('time').innerHTML = "The number of " + wildcard + ' is '+ Math.floor(Math.random() * 4000) + 1;
+      }
+    }
+  ]);
+
+
+  // Redirect the recognized text
+  artyom.redirectRecognizedTextOutput(function(text,isFinal){
+    var span = document.getElementById('output');
+
+    if(isFinal){
+      span.innerHTML = '';
+    }else {
+      span.innerHTML = text;
+    }
+  });
+
+  function startArtyom(){
+    artyom.initialize({
+      lang:"en-GB",// More languages are documented in the library
+      continuous:false,//if you have https connection, you can activate continuous mode
+      debug:true,//Show everything in the console
+      listen:true // Start listening when this function is triggered
+    });
   }
-  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (10 * 0.2) + "em";
-}
-function decreasetextDiv() {
-  if (document.body.style.fontSize == "") {
-    document.body.style.fontSize = "1.0em";
+
+  function stopArtyom(){
+    artyom.fatality();
   }
-  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + ((-10) * 0.2) + "em";
-}
 
-function enable()
-  {
-    d=document;
-    jf=d.createElement('script');
-    jf.src='https://core.atbar.org/atbar/en/latest/atbar.min.js';
-    jf.type='text/javascript';
-    jf.id='ToolBar';
-    d.getElementsByTagName('head')[0].appendChild(jf);
-  }
-function enable1()
-{
-  d=document;
-  jf=d.createElement('script');
-  jf.src='https://cdn.jsdelivr.net/gh/suprgyabhushan/print-xblock/printxblock/static/js/src/toolbar30.js';
-  jf.type='text/javascript';
-  jf.id='ToolBar';
-  d.getElementsByTagName('head')[0].appendChild(jf);
-}
-//document.getElementById('atbar').dispatchEvent(new MouseEvent("click"));
-//var elem = document.getElementById('atbar');
+  window.onload = function(){
+      var tab = document.getElementById("commands-list");
+      var commands =  artyom.getAvailableCommands();
+      var html = '';
 
-// Simulate clicking on the specified element.
-//triggerEvent( elem, 'click' );
+      for(var i = 0;i < commands.length;i++){
+          var command = commands[i];
+          html += command.description + " : <span style='color:blue;'>"+command.indexes.toString()+"</span><br>";
+      }
 
-//function triggerEvent( elem, event ) {
-//  var clickEvent = new Event( event ); // Create the event.
-//  elem.dispatchEvent( clickEvent );    // Dispatch the event.
-//}
-window.onload = onPageLoad();
+      tab.innerHTML = html;
 
-function onPageLoad() {
-  d=document;
-  jf=d.createElement('script');
-  jf.src='https://cdn.jsdelivr.net/gh/suprgyabhushan/print-xblock/printxblock/static/js/src/toolbar30.js';
-  jf.type='text/javascript';
-  jf.id='ToolBar';
-  d.getElementsByTagName('head')[0].appendChild(jf);
-}
+      artyom.initialize({lang:"es-ES"});
 
 
-/*function doalert(checkboxElem) {
-  if (checkboxElem.checked==false) {
-    d=document;
-    jf=d.createElement('script');
-    jf.src='http://marketplace.atbar.org/toolbars/25d28f0a5b08d5159bcdc88623586eb1a808b534.user.js';
-    jf.type='text/javascript';
-    jf.id='ToolBar';
-    d.getElementsByTagName('head')[0].appendChild(jf);
-  } else {
-    window.alert("checked");
-  }
-}*/
+  };
