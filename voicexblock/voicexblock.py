@@ -26,7 +26,7 @@ class VoiceXBlock(StudioEditableXBlockMixin, XBlock):
         html = self.resource_string("static/html/voicexblock.html")
         frag = Fragment(html.format(self=self))
         frag.add_css(self.resource_string("static/css/voicexblock.css"))
-        #frag.add_javascript(self.resource_string("static/js/src/voicexblock.js"))
+        frag.add_javascript(self.resource_string("static/js/src/voicexblock.js"))
         frag.add_javascript(self.resource_string("https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"))
         frag.add_javascript(self.resource_string("https://sdkcarlos.github.io/demos/artyom.min.js"))
         return frag
