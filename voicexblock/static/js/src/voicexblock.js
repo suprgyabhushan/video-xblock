@@ -3,11 +3,13 @@
   // Every command is a literal object
 
 
-  function start(){
+window.onLoad = function() {
     if (annyang) {
     // Let's define a command.
     var commands = {
-      'hello': function() { alert('Hello world!'); }
+      'hello': function() {
+        alert('Hello world!');
+      }
     };
 
     // Add our commands to annyang
@@ -16,4 +18,9 @@
     // Start listening.
     annyang.start();
   }
+  else {
+      alert('ERROR: annyang not loaded!');
+  }
+
+
 }
