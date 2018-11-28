@@ -3,9 +3,9 @@
   // Every command is a literal object
 
 
-window.onLoad =  onPageLoad();
+//window.onLoad =  onPageLoad();
 
-function onPageLoad(){
+function start(){
     if (annyang) {
     // Let's define a command.
     var commands = {
