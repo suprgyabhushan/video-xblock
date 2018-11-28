@@ -26,7 +26,7 @@ class VoiceXBlock(StudioEditableXBlockMixin, XBlock):
         html = self.resource_string("static/html/voicexblock.html")
         frag = Fragment(html.format(self=self))
         frag.add_css(self.resource_string("static/css/voicexblock.css"))
-        frag.add_javascript(self.resource_string("static/js/src/annyang.min.js"))
+        frag.add_javascript_url('https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js')
         frag.add_javascript(self.resource_string("static/js/src/voicexblock.js"))
 
         return frag
