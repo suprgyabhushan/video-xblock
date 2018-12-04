@@ -54,8 +54,8 @@ else if (e.which == 114) {
 
 }
 else if (e.which == 115) {
-  alert('bye');
-  //document.querySelector('.rateRecipe.btns-one-small').click();
+  //alert('bye');
+  document.querySelector('.sequence-nav-button.button-next').click();
 
 }
 
