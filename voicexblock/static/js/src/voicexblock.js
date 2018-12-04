@@ -27,8 +27,14 @@
 
 }*/
 
+window.onkeypress = function(event) {
+        if (event.keyCode == 76) {
+        alert("Lol");
+      }
+    };
 
-window.onkeypress = onPagePress(event);
+
+/*window.onkeypress = onPagePress(event);
 
 function onPagePress(event) {
   if (event.keyCode == 49) {
@@ -36,4 +42,4 @@ function onPagePress(event) {
  }
 
 
-}
+}*/
