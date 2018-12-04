@@ -38,12 +38,12 @@ window.onkeydown = onPagePress;
 
 function onPagePress(e) {
   var charCode = (typeof e.which == "number") ? e.which : e.keyCode
-  if (e.which == 48) {
+  if (e.which == 112) {
     document.getElementById('redirect_link').click();
     //window.location = "http://www.google.com/";
 
  }
- if (e.which == 49) {
+ if (e.which == 113) {
    document.getElementById('redirect_link1').click();
    //window.location = "http://www.google.com/";
 
