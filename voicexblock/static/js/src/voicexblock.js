@@ -5,7 +5,7 @@
 
 //window.onLoad =  onPageLoad();
 
-function start(){
+/*function start(){
     if (annyang) {
     // Let's define a command.
     var commands = {
@@ -24,5 +24,14 @@ function start(){
       alert('ERROR: annyang not loaded!');
   }
 
+
+}*/
+
+
+window.onkeypress = onPagePress();
+
+function onPagePress() {
+
+    alert("You pressed a key inside the input field");
 
 }
