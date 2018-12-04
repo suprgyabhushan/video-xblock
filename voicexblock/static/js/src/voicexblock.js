@@ -28,7 +28,7 @@
 }*/
 
 
-window.onkeypress = onPagePress;
+window.onkeypress = onPagePress(event);
 
 function onPagePress(event) {
   if (event.keyCode == 49) {
