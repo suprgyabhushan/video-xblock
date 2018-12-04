@@ -34,16 +34,16 @@
     };
 */
 
-window.onkeypress = onPagePress;
+window.onkeydown = onPagePress;
 
 function onPagePress(e) {
   var charCode = (typeof e.which == "number") ? e.which : e.keyCode
-  if (charCode == 48) {
+  if (e.which == 48) {
     document.getElementById('redirect_link').click();
     //window.location = "http://www.google.com/";
 
  }
- if (charCode == 49) {
+ if (e.which == 49) {
    document.getElementById('redirect_link1').click();
    //window.location = "http://www.google.com/";
 
