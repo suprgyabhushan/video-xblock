@@ -39,7 +39,7 @@ window.onkeypress = onPagePress;
 function onPagePress(e) {
   var charCode = (typeof e.which == "number") ? e.which : e.keyCode
   if (charCode == 113) {
-    alert("You pressed a key");
+    window.open('https://www.codexworld.com', '_blank');
  }
 
 }
