@@ -38,10 +38,16 @@ window.onkeypress = onPagePress;
 
 function onPagePress(e) {
   var charCode = (typeof e.which == "number") ? e.which : e.keyCode
-  if (charCode == 113) {
+  if (charCode == 48) {
     document.getElementById('redirect_link').click();
     //window.location = "http://www.google.com/";
 
  }
+ if (charCode == 49) {
+   document.getElementById('redirect_link1').click();
+   //window.location = "http://www.google.com/";
+
+}
+
 
 }
