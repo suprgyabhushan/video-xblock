@@ -48,7 +48,7 @@ function onPagePress(e) {
    //window.location = "http://www.google.com/";
 
 }
-else if (e.which == 114) {
+else if (e.which == 118) {
   document.querySelector('.sequence-nav-button.button-previous').click();
 
 }
