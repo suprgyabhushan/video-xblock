@@ -32,6 +32,6 @@ window.onkeypress = onPagePress();
 
 function onPagePress() {
 
-    alert("You pressed a key inside the input field");
+    alert("You pressed a key");
 
 }
