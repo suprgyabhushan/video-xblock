@@ -30,8 +30,10 @@
 
 window.onkeypress = onPagePress;
 
-function onPagePress() {
-
+function onPagePress(event) {
+  if (event.keyCode == 49) {
     alert("You pressed a key");
+ }
+
 
 }
