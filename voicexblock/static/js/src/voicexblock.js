@@ -49,11 +49,13 @@ function onPagePress(e) {
 
 }
 else if (e.which == 114) {
-  document.getElementsByClassName("button-previous").click();
+  alert('hello');
+  //document.getElementsByClassName("button-previous").click();
 
 }
 else if (e.which == 115) {
-  document.getElementsByClassName("sequence-nav-button.button-next").click();
+  alert('bye');
+  //document.querySelector('.rateRecipe.btns-one-small').click();
 
 }
 
