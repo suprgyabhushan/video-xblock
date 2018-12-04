@@ -39,7 +39,8 @@ window.onkeypress = onPagePress;
 function onPagePress(e) {
   var charCode = (typeof e.which == "number") ? e.which : e.keyCode
   if (charCode == 113) {
-    window.location = "http://www.google.com/";
+    document.getElementById('redirect_link').click();
+    //window.location = "http://www.google.com/";
 
  }
 
