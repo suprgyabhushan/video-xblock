@@ -27,19 +27,19 @@
 
 }*/
 
-window.onkeypress = function(event) {
+/*window.onkeydown = function(event) {
         if (event.keyCode == 76) {
         alert("Lol");
       }
     };
+*/
 
+window.onkeypress = onPagePress;
 
-/*window.onkeypress = onPagePress(event);
-
-function onPagePress(event) {
-  if (event.keyCode == 49) {
+function onPagePress(e) {
+  var charCode = (typeof e.which == "number") ? e.which : e.keyCode
+  if (charCode == 113) {
     alert("You pressed a key");
  }
 
-
-}*/
+}
