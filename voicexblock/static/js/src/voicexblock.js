@@ -28,7 +28,7 @@
 }*/
 
 
-window.onkeypress = onPagePress();
+window.onkeypress = onPagePress;
 
 function onPagePress() {
 
