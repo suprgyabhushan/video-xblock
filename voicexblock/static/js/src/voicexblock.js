@@ -49,8 +49,7 @@ function onPagePress(e) {
 
 }
 else if (e.which == 114) {
-  alert('hello');
-  //document.getElementsByClassName("button-previous").click();
+  document.querySelector('.sequence-nav-button.button-previous').click();
 
 }
 else if (e.which == 115) {
