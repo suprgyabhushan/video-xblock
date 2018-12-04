@@ -53,8 +53,8 @@ else if (e.which == 114) {
 
 }
 else if (e.which == 115) {
-  document.getElementsByClassName("button-next").click();
-  
+  document.getElementsByClassName("sequence-nav-button.button-next").click();
+
 }
 
 
