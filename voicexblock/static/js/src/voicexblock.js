@@ -37,16 +37,24 @@
 window.onkeydown = onPagePress;
 
 function onPagePress(e) {
-  var charCode = (typeof e.which == "number") ? e.which : e.keyCode
+  //var charCode = (typeof e.which == "number") ? e.which : e.keyCode
   if (e.which == 112) {
     document.getElementById('redirect_link').click();
     //window.location = "http://www.google.com/";
 
  }
- if (e.which == 113) {
+ else if (e.which == 113) {
    document.getElementById('redirect_link1').click();
    //window.location = "http://www.google.com/";
 
+}
+else if (e.which == 114) {
+  document.getElementsByClassName("button-previous").click();
+
+}
+else if (e.which == 115) {
+  document.getElementsByClassName("button-next").click();
+  
 }
 
 
