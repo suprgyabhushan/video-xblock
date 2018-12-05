@@ -48,11 +48,11 @@ function onPagePress(e) {
    //window.location = "http://www.google.com/";
 
 }
-else if (e.which == 119) {
+else if (e.which == 37) {
   document.querySelector('.sequence-nav-button.button-previous').click();
 
 }
-else if (e.which == 115) {
+else if (e.which == 39) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-next').click();
 
