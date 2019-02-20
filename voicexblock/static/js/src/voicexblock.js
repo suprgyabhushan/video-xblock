@@ -52,13 +52,13 @@ function onPagePress(e) {
 }
 else if (e.which == 80) {
   document.querySelector('.sequence-nav-button.button-previous').click();
-  window.alert("n key pressed");
+  window.alert("p key pressed");
 
 }
 else if (e.which == 78) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-next').click();
-  window.alert("p key pressed");
+  window.alert("n key pressed");
 
 }
 
