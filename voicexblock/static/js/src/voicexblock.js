@@ -61,7 +61,7 @@ function onPagePress(e) {
 
   if (keys["alt"] && keys["l"]) {
     document.getElementById('redirect_link').click();
-    window.alert("alt+d key pressed");
+    window.alert("alt+l key pressed");
     keys["alt"] = false;
     keys["l"] = false;
     //window.location = "http://www.google.com/";
@@ -87,7 +87,7 @@ function onPagePress(e) {
 else if (keys["alt"] && keys["c"]) {
   //alert('bye');
   document.querySelector('.submit.btn-brand').click();
-  window.alert("alt+s key pressed");
+  window.alert("alt+c key pressed");
   keys["alt"] = false;
   keys["c"] = false;
 
