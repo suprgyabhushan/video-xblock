@@ -38,9 +38,9 @@ window.onkeydown = onPagePress;
 
 function onPagePress(e) {
   //var charCode = (typeof e.which == "number") ? e.which : e.keyCode
-  if (e.which == 112) {
+  if ((e.which == 49) && (e.which == 18)) {
     document.getElementById('redirect_link').click();
-    window.alert("F1 key pressed");
+    window.alert("Alt+1 key pressed");
     //window.location = "http://www.google.com/";
 
  }
