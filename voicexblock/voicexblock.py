@@ -11,7 +11,7 @@ class VoiceXBlock(StudioEditableXBlockMixin, XBlock):
 
     # Fields are defined on the class.  You can access them in your code as
     # self.<fieldname>.
-    display_name = String(display_name="Display name", default='Voice', scope=Scope.settings)
+    display_name = String(display_name="Display name", default='HotKeys', scope=Scope.settings)
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
