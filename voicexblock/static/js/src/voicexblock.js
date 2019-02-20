@@ -55,12 +55,12 @@ else if (e.which == 80 && e.which == 78) {
   window.alert("p & n key pressed");
 
 }
-else if (e.which == 78) {
+/*else if (e.which == 78) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-next').click();
   window.alert("n key pressed");
 
-}
+}*/
 else if (e.which == 83) {
   //alert('bye');
   document.querySelector('.submit.btn-brand').click();
