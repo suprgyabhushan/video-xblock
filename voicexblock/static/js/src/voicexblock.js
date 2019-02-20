@@ -38,8 +38,8 @@ window.onkeydown = onPagePress;
 //window.onkeyup = onPagePressUp;
 var keys = {
     alt: false,
-    d: false,
-    s: false,
+    l: false,
+    c: false,
     n: false,
     p: false
  };
@@ -49,12 +49,12 @@ function onPagePress(e) {
 
   if (e.keyCode == 18) {
         keys["alt"] = true;
-    } else if (e.keyCode == 68) {
-        keys["d"] = true;
+    } else if (e.keyCode == 76) {
+        keys["l"] = true;
     } else if (e.keyCode == 78) {
         keys["n"] = true;
-    } else if (e.keyCode == 83) {
-        keys["s"] = true;
+    } else if (e.keyCode == 67) {
+        keys["c"] = true;
     } else if (e.keyCode == 80) {
         keys["p"] = true;
     }
