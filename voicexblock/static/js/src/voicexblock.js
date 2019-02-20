@@ -62,6 +62,8 @@ function onPagePress(e) {
   if (keys["alt"] && keys["d"]) {
     document.getElementById('redirect_link').click();
     window.alert("alt+d key pressed");
+    keys["alt"] = false;
+    keys["d"] = false;
     //window.location = "http://www.google.com/";
 
  }
@@ -86,25 +88,31 @@ else if (keys["alt"] && keys["s"]) {
   //alert('bye');
   document.querySelector('.submit.btn-brand').click();
   window.alert("alt+s key pressed");
+  keys["alt"] = false;
+  keys["s"] = false;
 
 }
 else if (keys["alt"] && keys["n"]) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-next').click();
   window.alert("alt+n key pressed");
+  keys["alt"] = false;
+  keys["n"] = false;
 
 }
 else if (keys["alt"] && keys["p"]) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-previous').click();
   window.alert("alt+p key pressed");
+  keys["alt"] = false;
+  keys["p"] = false;
 
 }
 
 
 }
 
-function onPagePressUp(e) {
+/*function onPagePressUp(e) {
   //var charCode = (typeof e.which == "number") ? e.which : e.keyCode
   
 
@@ -122,4 +130,4 @@ function onPagePressUp(e) {
 
   
 
-}
+}*/
