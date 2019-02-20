@@ -63,7 +63,7 @@ function onPagePress(e) {
     document.getElementById('redirect_link').click();
     window.alert("alt+d key pressed");
     keys["alt"] = false;
-    keys["d"] = false;
+    keys["l"] = false;
     //window.location = "http://www.google.com/";
 
  }
@@ -89,7 +89,7 @@ else if (keys["alt"] && keys["s"]) {
   document.querySelector('.submit.btn-brand').click();
   window.alert("alt+s key pressed");
   keys["alt"] = false;
-  keys["s"] = false;
+  keys["c"] = false;
 
 }
 else if (keys["alt"] && keys["n"]) {
