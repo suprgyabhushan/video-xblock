@@ -50,15 +50,15 @@ function onPagePress(e) {
    //window.location = "http://www.google.com/";
 
 }
-else if (e.which == 37) {
+else if (e.which == 78) {
   document.querySelector('.sequence-nav-button.button-previous').click();
-  window.alert("Left arrow key pressed");
+  window.alert("n key pressed");
 
 }
-else if (e.which == 39) {
+else if (e.which == 80) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-next').click();
-  window.alert("Right arrow key pressed");
+  window.alert("p key pressed");
 
 }
 
