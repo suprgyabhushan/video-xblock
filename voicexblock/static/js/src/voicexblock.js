@@ -50,9 +50,9 @@ function onPagePress(e) {
    //window.location = "http://www.google.com/";
 
 }
-else if (e.which == 80) {
+else if (e.which == 80 && e.which == 78) {
   document.querySelector('.sequence-nav-button.button-previous').click();
-  window.alert("p key pressed");
+  window.alert("p & n key pressed");
 
 }
 else if (e.which == 78) {
