@@ -35,38 +35,91 @@
 */
 
 window.onkeydown = onPagePress;
-
+window.onkeyup = onPagePressUp;
+var keys = {
+    alt: false,
+    d: false,
+    s: false,
+    n: false,
+    p: false
+ };
 function onPagePress(e) {
   //var charCode = (typeof e.which == "number") ? e.which : e.keyCode
-  if (e.which == 68) {
+  
+
+  if (e.which == 18) {
+        keys["alt"] = true;
+    } else if (e.which == 68) {
+        keys["d"] = true;
+    } else if (e.which == 78) {
+        keys["n"] = true;
+    } else if (e.which == 83) {
+        keys["s"] = true;
+    } else if (e.which == 80) {
+        keys["p"] = true;
+    }
+
+  if (keys["alt"] && keys["d"]) {
     document.getElementById('redirect_link').click();
-    window.alert("d key pressed");
+    window.alert("alt+d key pressed");
     //window.location = "http://www.google.com/";
 
  }
- else if (e.which == 113) {
+ /*else if (e.which == 113) {
    document.getElementById('redirect_link1').click();
    window.alert("F2 key pressed");
    //window.location = "http://www.google.com/";
 
-}
-else if (e.which == 80 && e.which == 78) {
+}*/
+/*else if (e.ctrlKey && e.which == 78) {
   document.querySelector('.sequence-nav-button.button-previous').click();
   window.alert("p & n key pressed");
 
-}
+}*/
 /*else if (e.which == 78) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-next').click();
   window.alert("n key pressed");
 
 }*/
-else if (e.which == 83) {
+else if (keys["alt"] && keys["s"]) {
   //alert('bye');
   document.querySelector('.submit.btn-brand').click();
-  window.alert("s key pressed");
+  window.alert("alt+s key pressed");
+
+}
+else if (keys["alt"] && keys["n"]) {
+  //alert('bye');
+  document.querySelector('.sequence-nav-button.button-next').click();
+  window.alert("alt+n key pressed");
+
+}
+else if (keys["alt"] && keys["p"]) {
+  //alert('bye');
+  document.querySelector('.sequence-nav-button.button-previous').click();
+  window.alert("alt+p key pressed");
 
 }
 
+
+}
+
+function onPagePressUp(e) {
+  //var charCode = (typeof e.which == "number") ? e.which : e.keyCode
+  
+
+  if (e.which == 18) {
+        keys["alt"] = false;
+    } else if (e.which == 68) {
+        keys["d"] = false;
+    } else if (e.which == 78) {
+        keys["n"] = false;
+    } else if (e.which == 83) {
+        keys["s"] = false;
+    } else if (e.which == 80) {
+        keys["p"] = false;
+    }
+
+  
 
 }
