@@ -47,15 +47,15 @@ function onPagePress(e) {
   //var charCode = (typeof e.which == "number") ? e.which : e.keyCode
   
 
-  if (e.which == 18) {
+  if (e.keyCode == 18) {
         keys["alt"] = true;
-    } else if (e.which == 68) {
+    } else if (e.keyCode == 68) {
         keys["d"] = true;
-    } else if (e.which == 78) {
+    } else if (e.keyCode == 78) {
         keys["n"] = true;
-    } else if (e.which == 83) {
+    } else if (e.keyCode == 83) {
         keys["s"] = true;
-    } else if (e.which == 80) {
+    } else if (e.keyCode == 80) {
         keys["p"] = true;
     }
 
@@ -108,15 +108,15 @@ function onPagePressUp(e) {
   //var charCode = (typeof e.which == "number") ? e.which : e.keyCode
   
 
-  if (e.which == 18) {
+  if (e.keyCode == 18) {
         keys["alt"] = false;
-    } else if (e.which == 68) {
+    } else if (e.keyCode == 68) {
         keys["d"] = false;
-    } else if (e.which == 78) {
+    } else if (e.keyCode == 78) {
         keys["n"] = false;
-    } else if (e.which == 83) {
+    } else if (e.keyCode == 83) {
         keys["s"] = false;
-    } else if (e.which == 80) {
+    } else if (e.keyCode == 80) {
         keys["p"] = false;
     }
 
