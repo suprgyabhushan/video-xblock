@@ -35,7 +35,7 @@
 */
 
 window.onkeydown = onPagePress;
-window.onkeyup = onPagePressUp;
+//window.onkeyup = onPagePressUp;
 var keys = {
     alt: false,
     d: false,
