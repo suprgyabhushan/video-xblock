@@ -61,6 +61,12 @@ else if (e.which == 78) {
   window.alert("n key pressed");
 
 }
+else if (e.which == 83) {
+  //alert('bye');
+  document.querySelector('.submit.btn-brand').click();
+  window.alert("s key pressed");
+
+}
 
 
 }
