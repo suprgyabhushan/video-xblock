@@ -59,14 +59,15 @@ function onPagePress(e) {
         keys["p"] = true;
     }
 
-  /*if (keys["alt"] && keys["l"]) {
-    document.getElementById('redirect_link').click();
+  if (keys["alt"] && keys["l"]) {
+    //document.getElementById('redirect_link').click();
+    window.location = "http://www.google.com/";
     window.alert("alt+l key pressed");
     keys["alt"] = false;
     keys["l"] = false;
     //window.location = "http://www.google.com/";
 
- }*/
+ }
  /*else if (e.which == 113) {
    document.getElementById('redirect_link1').click();
    window.alert("F2 key pressed");
@@ -84,7 +85,7 @@ function onPagePress(e) {
   window.alert("n key pressed");
 
 }*/
-if (keys["alt"] && keys["c"]) {
+else if (keys["alt"] && keys["c"]) {
   //alert('bye');
   document.querySelector('.submit.btn-brand').click();
   window.alert("alt+c key pressed");
