@@ -60,7 +60,8 @@ function onPagePress(e) {
     }
 
   if (keys["alt"] && keys["l"]) {
-    document.getElementById('redirect_link').click();
+    //document.getElementById('redirect_link').click();
+    window.location = "http://subodha.visionempowertrust.org/dashboard";
     //window.alert("alt+l key pressed");
     keys["alt"] = false;
     keys["l"] = false;
@@ -86,7 +87,7 @@ function onPagePress(e) {
 }*/
 else if (keys["alt"] && keys["c"]) {
   //alert('bye');
-  document.querySelector('.submit.btn-brand').click();
+  document.querySelector('.nav-item.nav-item-course a').click();
   //window.alert("alt+c key pressed");
   keys["alt"] = false;
   keys["c"] = false;
@@ -94,7 +95,7 @@ else if (keys["alt"] && keys["c"]) {
 }
 else if (keys["alt"] && keys["n"]) {
   //alert('bye');
-  document.querySelector('.nav-item.nav-item-course a').click();
+  document.querySelector('.sequence-nav-button.button-next').click();
   //window.alert("alt+n key pressed");
   keys["alt"] = false;
   keys["n"] = false;
