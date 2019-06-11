@@ -88,6 +88,7 @@ function onPagePress(e) {
 else if (keys["alt"] && keys["c"]) {
   //alert('bye');
   document.querySelector('.nav-item.nav-item-course a').click();
+  document.querySelector('.submit.btn-brand').click();
   //window.alert("alt+c key pressed");
   keys["alt"] = false;
   keys["c"] = false;
