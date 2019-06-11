@@ -6,9 +6,9 @@ isually Impaired and Partially Visually Impaired.
 #Why is it needed: 
 It is designed keeping in mind the difficulties faced by the VI students to navigate throughout the website.
 #Keyboard Shortcuts Functionalities:
-1. F1 Key: Press this key to move to the dashboard page.
-2. F2 Key: Press this key to move to the course home page.
-3. Left Arrow Key: Press this key to move to the previous page within the course page.
-4. Right Arrow Key: Press this key to move to the next page within the course page.
+1. Alt + L Key: Press this key to move to the dashboard page.
+2. Alt + C Key: Press this key to move to the course home page.
+3. Alt + P Key: Press this key to move to the previous page within the course page.
+4. Alt + N Key: Press this key to move to the next page within the course page.
 
 
