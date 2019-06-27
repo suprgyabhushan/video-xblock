@@ -62,7 +62,7 @@ function onPagePress(e) {
   if (keys["alt"] && keys["l"]) {
     //document.getElementById('redirect_link').click();
     window.location = "http://subodha.visionempowertrust.org/dashboard";
-    //window.alert("alt+l key pressed");
+    window.alert("alt+l key pressed");
     keys["alt"] = false;
     keys["l"] = false;
     //window.location = "http://www.google.com/";
@@ -89,7 +89,7 @@ else if (keys["alt"] && keys["c"]) {
   //alert('bye');
   document.querySelector('.nav-item.nav-item-course a').click();
   //document.querySelector('.submit.btn-brand').click();
-  //window.alert("alt+c key pressed");
+  window.alert("alt+c key pressed");
   keys["alt"] = false;
   keys["c"] = false;
 
@@ -97,7 +97,7 @@ else if (keys["alt"] && keys["c"]) {
 else if (keys["alt"] && keys["n"]) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-next').click();
-  //window.alert("alt+n key pressed");
+  window.alert("alt+n key pressed");
   keys["alt"] = false;
   keys["n"] = false;
 
@@ -105,7 +105,7 @@ else if (keys["alt"] && keys["n"]) {
 else if (keys["alt"] && keys["p"]) {
   //alert('bye');
   document.querySelector('.sequence-nav-button.button-previous').click();
-  //window.alert("alt+p key pressed");
+  window.alert("alt+p key pressed");
   keys["alt"] = false;
   keys["p"] = false;
 
